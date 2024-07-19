@@ -1,7 +1,6 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension';
-import sidebar from "./sidebar.js";
 import { resolve } from "path";
 import { hopeTheme } from "vuepress-theme-hope";
 
@@ -20,7 +19,9 @@ export default defineUserConfig({
     },
     theme: hopeTheme({
         favicon: "/images/logo.png",
-        sidebar: sidebar,
+        sidebar: {
+            "/": "structure",
+        },
         navbar: [
             {
                 text: "版本列表",
