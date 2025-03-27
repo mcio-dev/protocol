@@ -114,7 +114,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2018, // 博客创建年份
       copyrightInfo:
-        '<a href="https://www.mrxiaom.top">人间工作P</a> | 到<a class="afdian" href="https://afdian.com/a/mrxiaom" target="_blank">爱发电</a>支持我',
+        '<a href="https://www.mrxiaom.top">人间工作P</a> | 到<a class="afdian" href="https://afdian.com/a/mrxiaom" target="_blank">爱发电</a>支持我' +
+        '<p>《我的世界》和《Minecraft》是微软公司和 Mojang Synergies AB 的商标，本站点与微软公司没有从属关系。</p>',
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
