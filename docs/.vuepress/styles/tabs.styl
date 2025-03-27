@@ -1,0 +1,58 @@
+.tabs-component
+  margin 2em 0
+
+.tabs-component-tabs
+  border-radius 6px
+  padding-left 0
+  border 0
+  align-items stretch
+  display flex
+  justify-content flex-start
+  margin-bottom -1px
+
+.tabs-component-tab
+  color #999
+  font-size 14px
+  font-weight 600
+  margin-right 0
+  list-style none
+  background linear-gradient(to right, #F8F8F8, #FFFFFF)
+  border solid 1px #ddd
+  border-radius 8px 8px 0 0
+  margin-right .25em
+  transition transform .3s ease
+  &:hover
+    color #333
+  &.is-active
+    background #FFF
+    color $accentColor
+    border-bottom solid 1px #fff
+    z-index 2
+    transform translateY(0)
+  &.is-active a:hover
+    cursor default
+  &.is-disabled *
+    color #cdcdcd
+    cursor not-allowed !important
+
+.tabs-component-tab-a
+  align-items center
+  color inherit
+  display flex
+  padding .25em 1em
+  text-decoration none
+  &:hover
+    text-decoration none !important
+
+.tabs-component-panels
+  border-top-left-radius 0
+  background-color #fff
+  border solid 1px #ddd
+  border-radius 0 6px 6px 6px
+  box-shadow 0 0 10px rgba(0, 0, 0, .05)
+  padding 1em 1em
+
+@media (max-width: $MQMobileNarrow)
+  .tabs-component-panels
+    div[class*=language-]
+      margin auto !important
